@@ -7,7 +7,10 @@ The following algorithms are included in this repository:
 #### Logistic Regression
 #### K-Nearest Neighbors (KNN)
 #### K-Means
+
+
 Each of these algorithms is explained in more detail below.
+
 
 ### Linear Regression
 Linear regression is a type of regression analysis used to predict the relationship between two continuous variables. In this implementation, we use the ordinary least squares method to find the best fit line for a given set of data points.

@@ -32,5 +32,16 @@ K-Means is a type of unsupervised learning used for clustering data points into 
 
 The KMeans class contains methods for clustering a given set of data points. The fit method takes in a matrix of input features and a value of k, and uses the K-Means algorithm to cluster the data points into k clusters. The predict method takes in a matrix of input features and returns a vector of cluster labels for each data point based on the learned centroids.
 
+
+### Decision Tree
+The decision tree algorithm is a type of supervised learning used for classification and regression tasks. It involves recursively splitting the dataset into smaller subsets based on the values of the input features until a stopping criterion is met. The resulting tree structure represents a sequence of decisions and their outcomes that can be used to predict the target variable for new data points.
+
+The decision tree algorithm begins by selecting the most important feature and then splitting the dataset into subsets based on the values of that feature. The process is repeated for each subset, creating a tree structure where each internal node represents a decision based on a feature, and each leaf node represents a predicted value for the target variable.
+
+To make a prediction for a new data point, it traverses down the decision tree from the root node to a leaf node, following the decisions based on the values of the input features until it reaches a leaf node that represents the predicted value for the target variable.
+
+Information gain is a commonly used criterion for selecting the best feature to split the dataset in decision tree algorithm. The basic idea behind information gain is to choose the feature that maximally reduces the uncertainty in the target variable.
+
+The calculation of information gain involves comparing the entropy of the parent node to the weighted sum of the entropies of the child nodes resulting from the split. Entropy is a measure of the amount of uncertainty or randomness in a dataset. 
 ### Requirements
 This implementation requires the NumPy library to be installed in Python.

@@ -43,5 +43,18 @@ To make a prediction for a new data point, it traverses down the decision tree f
 Information gain is a commonly used criterion for selecting the best feature to split the dataset in decision tree algorithm. The basic idea behind information gain is to choose the feature that maximally reduces the uncertainty in the target variable.
 
 The calculation of information gain involves comparing the entropy of the parent node to the weighted sum of the entropies of the child nodes resulting from the split. Entropy is a measure of the amount of uncertainty or randomness in a dataset. 
+
+### Random Forest
+Random Forest is a type of ensemble learning method used for both classification and regression tasks. It works by combining multiple decision trees that are built using randomly selected subsets of features and data samples.
+
+The Random Forest algorithm consists of the following steps:
+
+Randomly select a subset of features from the input dataset.
+Randomly select a subset of data samples from the input dataset.
+Build a decision tree using the selected features and data samples.
+Repeat steps 1-3 a fixed number of times to build multiple decision trees.
+For classification tasks, the predicted class label for a new data point is determined by taking the majority vote of the predicted class labels of all the decision trees. For regression tasks, the predicted value is determined by taking the average of the predicted values of all the decision trees.
+One of the advantages of Random Forest is that it is able to handle high-dimensional data with many features, as well as noisy data. It also provides a measure of feature importance, which can be used to identify the most important features for the task at hand.
+
 ### Requirements
 This implementation requires the NumPy library to be installed in Python.
